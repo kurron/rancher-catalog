@@ -4,7 +4,8 @@
     description: "some description"
     uuid: ea78d497-1de7-4460-a253-e5567b251657
     questions:
-        - variable: my_variable
+        - variable: "my_variable"
               label: "My label"
-              type: "multiline"
+              type: "string"
+              default: "Logan James"
               required: true
