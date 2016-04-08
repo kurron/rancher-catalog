@@ -1,0 +1,14 @@
+.catalog
+  name: Plex 
+  version: version number 
+  description: some description 
+  uuid: ea78d497-1de7-4460-a253-e5567b251657 
+  minimum_rancher_version: 1.0.0 
+  questions:
+    - variable:
+      label:
+      description: |
+      type: enum   
+      options:
+        - Option 1
+        - Option 2
