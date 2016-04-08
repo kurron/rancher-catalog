@@ -1,2 +1,3 @@
 example:
     image: ubuntu:latest
+    command: ls -alh
