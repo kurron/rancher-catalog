@@ -1,2 +1,2 @@
 example:
-    images: ubuntu:latest
+    image: ubuntu:latest
