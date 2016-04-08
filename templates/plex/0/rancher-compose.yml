@@ -2,11 +2,13 @@
   name: "Plex Media Server"
   version: "0.0.1"
   description: "Plex Media Server for home theatre use."
+  uuid: some-unique-identifier
   questions:
     - variable: "AWS_ACCESS_KEY"
       label: "AWS access key"
       description: "Access key to your AWS account"
       type: "string"
+      default: "BOB"
       required: true
 
 plex:
