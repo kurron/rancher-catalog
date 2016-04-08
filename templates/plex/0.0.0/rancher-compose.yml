@@ -3,7 +3,7 @@
     version: 0.0.0
     description: some description
     uuid: ea78d497-1de7-4460-a253-e5567b251657
-    minimum_rancher_version: v1.0.0
+    minimum_rancher_version: v0.0.0
     questions:
         - variable:
               label: "My label"
