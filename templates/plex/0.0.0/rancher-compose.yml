@@ -1,4 +1,4 @@
-.catalog
+.catalog:
     name: "Plex"
     version: "0.0.0"
     description: "some description"
