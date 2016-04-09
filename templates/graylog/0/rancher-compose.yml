@@ -43,7 +43,7 @@
 
 graylog:
     health_check:
-        port: 12201 
+        port: 12201
         interval: 2000
         unhealthy_threshold: 3
         request_line: ''
