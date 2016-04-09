@@ -3,6 +3,7 @@ graylog:
     ports:
         - 9000:9000
         - 12201:12201
+        - 5555:5555
     environment:
         GRAYLOG_PASSWORD: ${GRAYLOG_PASSWORD}
         GRAYLOG_USERNAME: ${GRAYLOG_USERNAME}
