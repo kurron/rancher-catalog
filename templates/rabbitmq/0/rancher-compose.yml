@@ -22,7 +22,12 @@
       type: "string"
       default: "/"
       required: true
-
+    - variable: "RABBITMQ_ERLANG_COOKIE"
+      label: "Erlang cookie"
+      description: "The clustering cookie to use."
+      type: "string"
+      default: "my-secret-cookie"
+      required: false
 
 configuration-server:
     health_check:
