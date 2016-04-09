@@ -1,9 +1,17 @@
+plex-config:
+    image: busybox
+    net: none
+    command: "true"
+    volumes:
+        - /config
+
 plex:
-    image: ubuntu:14.04
-    expose:
-        - 1000
+    image: timhaak/plex:latest
+    restart: always
+    ports:
+        - 32400
+    volumes_from:
+        - plex-config
     environment:
         AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
-    labels:
-        io.rancher.container.create_agent: "true"
-        io.rancher.container.agent.role: "external-dns"
+
