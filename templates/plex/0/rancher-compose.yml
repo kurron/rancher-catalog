@@ -2,20 +2,26 @@
   name: "Plex Media Server"
   version: "0.0.1"
   description: "Plex Media Server for home theatre use."
-  uuid: some-unique-identifier
+  uuid: 8a353284-fe5f-40a2-a6a4-d6704dd5e1d3
   questions:
-    - variable: "AWS_ACCESS_KEY"
-      label: "AWS access key"
-      description: "Access key to your AWS account"
+    - variable: "PLEX_USERNAME"
+      label: "Plex Username"
+      description: "Plex account username"
       type: "string"
-      default: "BOB"
+      default: "kurron"
+      required: true
+    - variable: "PLEX_PASSWORD"
+      label: "Plex Password"
+      description: "Plex account password"
+      type: "string"
       required: true
 
+
 plex:
-  health_check:
-    port: 1000
-    interval: 2000
-    unhealthy_threshold: 3
-    request_line: GET / HTTP/1.0
-    healthy_threshold: 2
-    response_timeout: 2000
+    health_check:
+        port: 34200
+        interval: 2000
+        unhealthy_threshold: 3
+        request_line: GET / HTTP/1.0
+        healthy_threshold: 2
+        response_timeout: 2000

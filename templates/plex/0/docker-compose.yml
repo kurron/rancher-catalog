@@ -1,9 +1,16 @@
 plex-config:
-    image: busybox
+    image: busybox:latest
     net: none
     command: "true"
     volumes:
         - /config
+
+plex-data:
+    image: busybox:latest
+    net: none
+    command: "true"
+    volumes:
+        - /data
 
 plex:
     image: timhaak/plex:latest
@@ -12,6 +19,8 @@ plex:
         - 32400
     volumes_from:
         - plex-config
+        - plex-data
     environment:
-        AWS_ACCESS_KEY: ${AWS_ACCESS_KEY}
+        PLEX_USERNAME: ${PLEX_USERNAME}
+        PLEX_PASSWORD: ${PLEX_PASSWORD}
 
