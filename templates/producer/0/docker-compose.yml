@@ -1,4 +1,4 @@
-configuration-server:
+tlo:
     image: kurron/docker-rancher-simulation-producer:1.0.0
     ports:
         - 8080
