@@ -20,7 +20,7 @@
       label: "Configuration Service"
       description: "Location of the configuration service"
       type: "string"
-      default: "http://configuration.configuration:63663"
+      default: "http://configuration.configuration:2020"
       required: true
     - variable: "SPRING_CLOUD_RABBITMQ_HOST"
       label: "RabbitMQ Broker"
