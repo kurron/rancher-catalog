@@ -13,7 +13,7 @@
     - variable: "PRODUCER_FAIL"
       label: "Service Failures"
       description: "Should we simulate service failures?"
-      type: "boolean"
+      type: "string"
       default: "false"
       required: true
     - variable: "SPRING_CLOUD_CONFIG_URI"
