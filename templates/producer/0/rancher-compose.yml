@@ -49,7 +49,7 @@
 
 producer:
     health_check:
-        port:8080 
+        port: 8080 
         interval: 5000
         unhealthy_threshold: 3
         request_line: GET /operations/health HTTP/1.0
