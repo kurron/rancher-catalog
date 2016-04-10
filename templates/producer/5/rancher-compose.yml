@@ -2,7 +2,7 @@
   name: "TLO"
   description: "Customer facing portion of the simulation."
   version: "5.0.0"
-  uuid: 7b353284-fe5f-40a2-a6a4-d6704dd5e1d3
+  uuid: 6b353284-fe5f-40a2-a6a4-d6704dd5e1d3
   questions:
     - variable: "PRODUCER_REALM"
       label: "Logging Realm"
@@ -32,7 +32,7 @@
       label: "MySQL Connection URL"
       description: "How to connect to MySQL"
       type: "string"
-      default: "jdbc:mysql://mysql.mysql/tlo"
+      default: "jdbc:mysql://mysql.mysql:3306/tlo"
       required: true
     - variable: "SPRING_CLOUD_DATASOURCE_USERNAME"
       label: "MySQL Username"
