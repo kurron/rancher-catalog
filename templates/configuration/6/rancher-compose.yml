@@ -14,7 +14,7 @@
       label: "Graylog Location"
       description: "Where to send log messages."
       type: "string"
-      default: "udp://localhost:12201"
+      default: "udp://192.168.1.227:12201"
       required: true
 
 configuration:

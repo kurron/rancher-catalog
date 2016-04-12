@@ -4,7 +4,7 @@ configuration:
         - 2020
     log_driver: gelf
     log_opt:
-        gelf-address: "${GELF_URI}"
+        gelf-address: ${GELF_URI}
         tag: "Configuration"
     environment:
         SPRING_CLOUD_CONFIG_SERVER_GIT_URI: ${GIT_URI}
