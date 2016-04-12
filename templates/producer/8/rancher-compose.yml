@@ -49,11 +49,11 @@
 
 mysql:
     external_ips:
-    - 54.187.67.220 
+    - 10.0.0.100
 
 rabbitmq:
     external_ips:
-    - 54.187.67.220 
+    - 10.0.0.100
 
 producer:
     health_check:
