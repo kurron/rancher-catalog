@@ -10,6 +10,12 @@
       type: "string"
       default: "https://github.com/kurron/spring-configuration-files.git"
       required: true
+    - variable: "GELF_URI"
+      label: "Graylog Location"
+      description: "Where to send log messages."
+      type: "string"
+      default: "udp://10.0.0.100:12201"
+      required: true
 
 configuration:
     health_check:
