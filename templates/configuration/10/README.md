@@ -1,6 +1,5 @@
 # Configuration Server
 
-
 ### Info:
 
  This template creates a Configuration server the serves up configurations from GitHub.

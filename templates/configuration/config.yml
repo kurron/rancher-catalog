@@ -1,4 +1,4 @@
-name: Spring Configuration Server
+name: Configuration Server
 description: |
     Configuration server for Spring Cloud based applications.
 version: 1.2.3
