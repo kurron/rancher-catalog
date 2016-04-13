@@ -6,7 +6,6 @@ reporting:
         - configuration/configuration:configuration
     environment:
         CONSUMER_REALM: ${CONSUMER_REALM}
-        SPRING_PROFILES_ACTIVE: default 
         SPRING_CLOUD_CONFIG_URI: ${SPRING_CLOUD_CONFIG_URI}
         SPRING_RABBITMQ_HOST: ${SPRING_RABBITMQ_HOST}
         SPRING_DATA_MONGODB_HOST: ${SPRING_DATA_MONGODB_HOST}
