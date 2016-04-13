@@ -2,19 +2,13 @@
   name: "Configuration Server"
   description: "Dispenses configuration data for Spring Cloud applications."
   version: "0.0.10"
-  uuid: 8b353284-fe5f-40a2-a6a4-d6704dd5e1d3
+  uuid: b353284-fe5f-40a2-a6a4-d6704dd5e1d3
   questions:
     - variable: "GIT_URI"
       label: "GitHub Repository"
       description: "GitHub repository that contains the configuration files."
       type: "string"
       default: "https://github.com/kurron/spring-configuration-files.git"
-      required: true
-    - variable: "GELF_URI"
-      label: "Graylog Location"
-      description: "Where to send log messages."
-      type: "string"
-      default: "udp://10.0.0.100:12201"
       required: true
 
 configuration:

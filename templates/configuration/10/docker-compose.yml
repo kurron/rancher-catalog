@@ -8,3 +8,4 @@ configuration:
         SPRING_CLOUD_CONSUL_DISCOVERY_REGISTER: false
     labels:
         io.rancher.scheduler.global: 'true'
+
