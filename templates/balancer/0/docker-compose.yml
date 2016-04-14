@@ -1,0 +1,6 @@
+balancer:
+    image: rancher/load-balancer-service
+    ports:
+        - 80:8080
+    external_links:
+        - producer/tlo:tlo
