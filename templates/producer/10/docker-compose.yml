@@ -14,6 +14,13 @@ tlo:
         SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
         SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
 
+balancer:
+    image: rancher/load-balancer-service
+    ports:
+        - 8080:8080
+    links:
+        - tlo:tlo
+
 mysql:
   image: rancher/external-service
 

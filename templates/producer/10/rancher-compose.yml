@@ -55,7 +55,8 @@ rabbitmq:
     external_ips:
     - 10.0.0.100
 
-tlo:
+# this name must match the folder, which gets translated into the stack name, or no services get deployed
+producer:
     health_check:
         port: 8080
         interval: 30000
@@ -63,3 +64,6 @@ tlo:
         request_line: GET /operations/health HTTP/1.0
         healthy_threshold: 2
         response_timeout: 5000
+
+balancer:
+    scale: 2
