@@ -5,7 +5,6 @@
 
  This template creates a media system backed by Plex and BitTorrent Sync. 
  
- 
 ### Usage:
 
  Select Media Server from catalog. 
