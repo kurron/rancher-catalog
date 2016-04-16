@@ -3,3 +3,8 @@
   description: "Plex Media Server and BitTorrent Sync"
   version: "1.0.0"
 
+nas-media:
+    scale: 1
+
+plex:
+    scale: 1
