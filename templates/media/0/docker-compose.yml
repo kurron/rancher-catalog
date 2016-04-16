@@ -7,7 +7,7 @@ nas-media:
         SERVER: "192.168.1.234"
         MOUNT: "/media"
     labels:
-        io.rancher.scheduler.global: 'true'
+        io.rancher.scheduler.global: "false"
 
 plex-configuration:
   image: busybox
