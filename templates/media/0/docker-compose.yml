@@ -1,3 +1,14 @@
+nas-media:
+    image: kurron/docker-nfs-media:latest
+    net: "host"
+    privileged: true
+    environment:
+        OPTIONS: "nolock,ro"
+        SERVER: "192.168.1.234"
+        MOUNT: "/media"
+    labels:
+        io.rancher.scheduler.global: 'true'
+
 plex-configuration:
   image: busybox
   container_name: plex-data
@@ -11,6 +22,7 @@ plex:
     ports:
     - "32400:32400"
     volumes_from:
+    - nas-media:ro
     - plex-configuration:rw
-labels:
-    io.rancher.sidekicks: plex-configuration 
+    labels:
+        io.rancher.sidekicks: plex-configuration
