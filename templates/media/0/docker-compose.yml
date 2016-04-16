@@ -1,17 +1,3 @@
-nas-media:
-    image: flaccid/docker-nfs-client:latest
-    net: host
-    ipc: host
-    privileged: true
-    volumes:
-        - /data:/mnt/host
-    environment:
-        SERVER: "192.168.1.234"
-        SHARE: "media"
-        MOUNT_POINT: "/mnt/host"
-    labels:
-        io.rancher.scheduler.global: 'true'
-
 plex-configuration:
   image: busybox
   container_name: plex-data
@@ -25,7 +11,6 @@ plex:
     ports:
     - "32400:32400"
     volumes_from:
-    - nas-media:ro
     - plex-configuration:rw
 labels:
     io.rancher.sidekicks: plex-configuration 
