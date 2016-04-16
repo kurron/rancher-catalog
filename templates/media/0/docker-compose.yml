@@ -1,11 +1,14 @@
 nas-media:
-    image: kurron/docker-nfs-media:latest
-    net: "host"
+    image: flaccid/docker-nfs-client:latest
+    net: host
+    ipc: host
     privileged: true
+    volumes:
+        - /data:/mnt/host
     environment:
-        OPTIONS: "nolock,ro"
         SERVER: "192.168.1.234"
-        MOUNT: "/media"
+        SHARE: "media"
+        MOUNT_POINT: "/mnt/host"
     labels:
         io.rancher.scheduler.global: 'true'
 
