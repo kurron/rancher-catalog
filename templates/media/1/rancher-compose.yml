@@ -1,7 +1,10 @@
 .catalog:
   name: "Media Server"
   description: "Plex Media Server and BitTorrent Sync"
-  version: "1.0.0"
+  version: "2.0.0"
 
 plex:
+    scale: 1
+
+bittorrent-sync:
     scale: 1
