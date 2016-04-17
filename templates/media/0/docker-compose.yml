@@ -5,3 +5,12 @@ plex:
     - "32400:32400"
     volumes:
     - /nas/media:/media
+
+bittorrent-sync:
+    image: kurron/docker-bittorrent-sync
+    net: host
+    ports:
+    - "1234:1234"
+    - "8888:8888"
+    volumes:
+    - /nas/btsync:/mnt/sync

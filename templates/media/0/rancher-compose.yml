@@ -5,3 +5,6 @@
 
 plex:
     scale: 1
+
+bittorrent-sync:
+    scale: 1
