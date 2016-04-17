@@ -3,16 +3,5 @@ plex:
     net: host
     ports:
     - "32400:32400"
-    volumes_from:
-    - plex-configuration:rw
     volumes:
     - /nas/media:/media
-    labels:
-        io.rancher.sidekicks: plex-configuration
-
-plex-configuration:
-  image: busybox
-  command: "true"
-  volumes:
-      - /config
-
