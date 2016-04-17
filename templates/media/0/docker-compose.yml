@@ -1,8 +1,18 @@
+plex-configuration:
+  image: busybox
+  container_name: plex-data
+  command: "true"
+  volumes:
+      - /config
+
 plex:
     image: timhaak/plex
     net: host
     ports:
     - "32400:32400"
+    volumes_from:
+    - plex-configuration:rw
     volumes:
     - /nas/media:/media
-    - /nas/plex-config:/config
+    labels:
+        io.rancher.sidekicks: plex-configuration
