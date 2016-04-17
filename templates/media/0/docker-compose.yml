@@ -1,10 +1,3 @@
-plex-configuration:
-  image: busybox
-  container_name: plex-data
-  command: "true"
-  volumes:
-      - /config
-
 plex:
     image: timhaak/plex
     net: host
@@ -16,3 +9,10 @@ plex:
     - /nas/media:/media
     labels:
         io.rancher.sidekicks: plex-configuration
+
+plex-configuration:
+  image: busybox
+  command: "true"
+  volumes:
+      - /config
+

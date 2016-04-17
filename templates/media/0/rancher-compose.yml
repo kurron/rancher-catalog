@@ -2,3 +2,8 @@
   name: "Media Server"
   description: "Plex Media Server and BitTorrent Sync"
   version: "1.0.0"
+
+plex:
+    scale: 1
+plex-configuration:
+    scale: 1
